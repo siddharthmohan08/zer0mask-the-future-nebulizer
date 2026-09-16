@@ -8,6 +8,18 @@ It uses off-the-shelf humidifier parts, recycled e-cigarette batteries, and 3D p
 
 > **Important:** zer0mask is a research/prototyping project and has **not** been established as a clinically validated medical device. The instructions below describe the construction of the prototype hardware only. **Do not use an unvalidated prototype to administer medication to yourself or another person.** Electrical, material, aerosol, sterility, dosage-delivery, and regulatory testing are required before clinical use.
 
+
+## Prototype photos
+
+<p align="center">
+  <img src="docs/images/prototype-assembled-glow.jpeg" alt="Assembled zer0mask with glowing reservoir and straps" width="420"/>
+  <img src="docs/images/prototype-vapor-handheld.jpeg" alt="Handheld zer0mask prototype producing aerosol" width="420"/>
+</p>
+
+<p align="center">
+  <img src="docs/images/prototype-windowsill-vapor.jpeg" alt="zer0mask on a windowsill with vapor cascading from the reservoir" width="560"/>
+</p>
+
 ## Overview
 
 The device integrates:
@@ -87,6 +99,15 @@ The physical assembly consists of six primary sections, arranged vertically:
              │                      │
              └──────────────────────┘
 ```
+
+
+<p align="center">
+  <img src="docs/images/cad-exploded-assembly.jpeg" alt="Exploded CAD assembly of zer0mask" width="480"/>
+</p>
+
+<p align="center">
+  <img src="docs/images/cad-mask.jpeg" alt="CAD render of the zer0mask faceplate" width="360"/>
+</p>
 
 The components are intended to stack along a common central axis. When assembled, the reservoir feeds the ultrasonic module, while the electronics located above it provide the electrical power required by the module.
 
@@ -373,6 +394,12 @@ The mount then friction-fits into the lower portion of the electronics enclosure
 
 ## 10. Medicine Reservoir
 
+
+<p align="center">
+  <img src="docs/images/cad-reservoir-collar.jpeg" alt="CAD render of the reservoir / collar interface" width="320"/>
+</p>
+
+
 The reservoir forms the lowest portion of the assembly.
 
 It is designed to hold the liquid used by the nebulizing system and interface directly with the ultrasonic module.
@@ -609,26 +636,3 @@ zer0mask is an experimental respiratory-device prototype. The fact that the devi
 Before any human-use application, the design would require appropriate engineering and medical-device validation, including evaluation of aerosol characteristics, delivered dose, materials compatibility, contamination/sterility, electrical and battery safety, fluid-path safety, reliability, and applicable regulatory requirements.
 
 For development and demonstration, testing should use non-drug test fluids appropriate for the test method rather than medication.
-
-## Suggested GitHub structure
-
-```
-zer0mask/
-├── README.md
-├── CAD/
-│   ├── mask/
-│   ├── electronics_bay/
-│   ├── electronics_tray/
-│   ├── electronics_lid/
-│   ├── humidifier_mount/
-│   └── reservoir/
-├── Electronics/
-│   ├── schematic/
-│   └── wiring.md
-├── Assembly/
-│   └── assembly.md
-├── Testing/
-│   ├── aerosol_testing.md
-│   └── battery_testing.md
-└── LICENSE
-```
